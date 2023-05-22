@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 offset-md-3">
+      
+      <div style="background-color: aqua;" class="p-4 text-write rounded-0">
+        <h1>ACTUALIZA LOS DATOS</h1>
+  <form action="/tasks/{{auto._id}}/edit" method="POST">
+
+    <div class="mb-3">
+      <input
+      type="text"
+      name="marca"
+      placeholder="Marca"
+      value="{{auto.marca}}"
+      class="form-control rounded-0 bg-dark text-white"
+    />
+    </div>
+
+    <div class="mb-3">
+        <textarea
+      name="modelo"
+      rows="3"
+      placeholder="agrege nuevo modelo"
+      class="form-control rounded-0 bg-dark text-white"
+     >{{auto.modelo}}</textarea>
+    </div>
+
+    <div class="mb-3">
+      <textarea
+      name="color"
+      rows="3"
+      placeholder="agrege nuevo color"
+      class="form-control rounded-0 bg-dark text-white"
+     >{{auto.color}}</textarea>
+    </div>
+    <div class="mb-3">
+      <textarea
+      name="precio"
+      rows="3"
+      placeholder="agrege nuevo precio"
+      class="form-control rounded-0 bg-dark text-white"
+     >{{auto.precio}}</textarea>
+    </div>
+
+    <button class="btn btn-primary">Update</button>
+  </form>
+
+</div>
+    </div>
+  </div>
+</div>
